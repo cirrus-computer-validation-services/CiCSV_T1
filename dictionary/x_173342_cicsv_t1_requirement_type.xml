@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Requirement type" max_length="40" name="x_173342_cicsv_t1_requirement_type" type="collection">
+        <element label="Abbreviation" mandatory="true" max_length="5" name="abbreviation" type="string"/>
+        <element label="Name" mandatory="true" max_length="30" name="name" type="string"/>
+    </element>
+</database>

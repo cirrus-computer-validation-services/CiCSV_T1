@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Project" max_length="40" name="x_173342_cicsv_t1_project" type="collection">
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Project manager" max_length="32" name="project_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element display="true" label="Project name" mandatory="true" max_length="30" name="project_name" type="string"/>
+        <index name="index">
+            <element name="project_manager"/>
+        </index>
+    </element>
+</database>
