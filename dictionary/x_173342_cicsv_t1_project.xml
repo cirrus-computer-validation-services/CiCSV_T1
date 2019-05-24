@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Project" max_length="40" name="x_173342_cicsv_t1_project" type="collection">
+        <element default="True" label="Active?" max_length="40" name="active" type="boolean"/>
         <element label="Description" max_length="500" name="description" type="string"/>
         <element label="Project manager" max_length="32" name="project_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element display="true" label="Project name" mandatory="true" max_length="30" name="project_name" type="string"/>
+        <element choice="1" label="Status" max_length="32" name="status" reference="x_173342_cicsv_t1_status" type="reference">
+            <choice/>
+        </element>
         <index name="index">
             <element name="project_manager"/>
+        </index>
+        <index name="index2">
+            <element name="status"/>
         </index>
     </element>
 </database>
