@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Status" language="en" table="x_173342_cicsv_t1_status">
+    <sys_documentation element="u_project_smes" label="Project SMEs" language="en" table="x_173342_cicsv_t1_project">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element/>
+            <element>u_project_smes</element>
             <help/>
             <hint/>
-            <label>Status</label>
+            <label>Project SMEs</label>
             <language>en</language>
-            <name>x_173342_cicsv_t1_status</name>
-            <plural>Status</plural>
+            <name>x_173342_cicsv_t1_project</name>
+            <plural>Project SMEs</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-05-24 07:22:38</sys_created_on>
-            <sys_id>ebc91633dba533008f1daf26489619d3</sys_id>
+            <sys_created_on>2019-05-30 18:51:42</sys_created_on>
+            <sys_id>b36dc368db3533008f1daf264896192a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Status</sys_name>
+            <sys_name>Project SMEs</sys_name>
             <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
             <sys_policy/>
             <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
-            <sys_update_name>sys_documentation_x_173342_cicsv_t1_status__en</sys_update_name>
+            <sys_update_name>sys_documentation_x_173342_cicsv_t1_project_u_project_smes_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-05-24 07:22:38</sys_updated_on>
+            <sys_updated_on>2019-05-30 18:51:42</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Project" max_length="40" name="x_173342_cicsv_t1_project" type="collection">
-        <element default="True" label="Active?" max_length="40" name="active" type="boolean"/>
-        <element label="Description" max_length="500" name="description" type="string"/>
-        <element label="Project manager" max_length="32" name="project_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element display="true" label="Project name" mandatory="true" max_length="30" name="project_name" type="string"/>
-        <element choice="1" label="Status" max_length="32" name="status" reference="x_173342_cicsv_t1_status" type="reference">
+    <element extends="x_173342_cicsv_t1_segment" label="Project" max_length="40" name="x_173342_cicsv_t1_project" type="collection">
+        <element display="true" label="Project ID" mandatory="true" max_length="10" name="project_id" type="string"/>
+        <element label="Project manager" mandatory="true" max_length="32" name="project_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Project approvers" max_length="4000" name="u_project_approvers" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element label="Project SMEs" max_length="4000" name="u_project_smes" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element choice="1" label="Project sponsors" max_length="4000" name="u_project_sponsors" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list">
             <choice/>
         </element>
-        <index name="index">
-            <element name="project_manager"/>
-        </index>
-        <index name="index2">
-            <element name="status"/>
-        </index>
     </element>
 </database>
