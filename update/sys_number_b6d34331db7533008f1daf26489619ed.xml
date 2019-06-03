@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_173342_cicsv_t1_project">x_173342_cicsv_t1_project</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>PROJ</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-03 15:22:42</sys_created_on>
+        <sys_id>b6d34331db7533008f1daf26489619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PROJ</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_number_b6d34331db7533008f1daf26489619ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-03 15:22:42</sys_updated_on>
+    </sys_number>
+</record_update>
