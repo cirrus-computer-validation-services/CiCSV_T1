@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="x_173342_cicsv_t1_m2m_requirement__projects" max_length="40" name="x_173342_cicsv_t1_m2m_requirement_projects" type="collection">
+        <element label="Project" max_length="32" name="project" reference="x_173342_cicsv_t1_project" type="reference"/>
+        <element label="Requirement_counter" max_length="32" name="requirement_counter" reference="x_173342_cicsv_t1_requirement_counter" type="reference"/>
+        <index name="index">
+            <element name="project"/>
+        </index>
+        <index name="index2">
+            <element name="requirement_counter"/>
+        </index>
+    </element>
+</database>

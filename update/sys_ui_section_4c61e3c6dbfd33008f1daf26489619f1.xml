@@ -4,13 +4,13 @@
             <element>u_project_identifier</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>c4e463cadbfd33008f1daf2648961972</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>78b85df1db8633008f1daf2648961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_requirement_identifier</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>48e463cadbfd33008f1daf2648961972</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>f8b85df1db8633008f1daf2648961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>c8e463cadbfd33008f1daf2648961972</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>7cb85df1db8633008f1daf2648961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_requirement_type</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>4ce463cadbfd33008f1daf2648961972</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>fcb85df1db8633008f1daf2648961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>status</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>cce463cadbfd33008f1daf2648961972</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>70b85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.end_split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>40e463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>f0b85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>title</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>c0e463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>74b85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>description</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>44e463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>f4b85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>attachments</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>c4e463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>78b85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>.begin_split</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>48e463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>f8b85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>sys_created_on</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>c8e463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>7cb85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>sys_updated_on</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>4ce463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>fcb85df1db8633008f1daf2648961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>.split</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>cce463cadbfd33008f1daf2648961973</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>70b85df1db8633008f1daf2648961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -186,13 +186,13 @@
             <element>sys_created_by</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>40e463cadbfd33008f1daf2648961974</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>f0b85df1db8633008f1daf2648961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -200,15 +200,43 @@
             <element>sys_updated_by</element>
             <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-04 12:25:00</sys_created_on>
-            <sys_id>c0e463cadbfd33008f1daf2648961974</sys_id>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>74b85df1db8633008f1daf2648961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-04 12:25:00</sys_updated_on>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>f4b85df1db8633008f1daf2648961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:49:47</sys_created_on>
+            <sys_id>78b85df1db8633008f1daf2648961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_requirement" sys_domain="global" view="Default view">4c61e3c6dbfd33008f1daf26489619f1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:49:47</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
