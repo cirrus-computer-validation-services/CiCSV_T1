@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Segment" language="en" table="x_173342_cicsv_t1_segment">
+    <sys_documentation element="" label="Statement" language="en" table="x_173342_cicsv_t1_segment">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element/>
             <help/>
             <hint/>
-            <label>Segment</label>
+            <label>Statement</label>
             <language>en</language>
             <name>x_173342_cicsv_t1_segment</name>
-            <plural>Segments</plural>
+            <plural>Statements</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2019-05-30 10:45:38</sys_created_on>
             <sys_id>f32e15e0db3133008f1daf2648961983</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Segment</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Statement</sys_name>
             <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
             <sys_policy/>
             <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
             <sys_update_name>sys_documentation_x_173342_cicsv_t1_segment__en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-05-30 10:45:38</sys_updated_on>
+            <sys_updated_on>2019-07-04 12:31:09</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
