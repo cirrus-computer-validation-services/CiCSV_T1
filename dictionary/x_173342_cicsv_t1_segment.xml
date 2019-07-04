@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Segment" max_length="40" name="x_173342_cicsv_t1_segment" type="collection">
+    <element extends="task" label="Statement" max_length="40" name="x_173342_cicsv_t1_segment" type="collection">
         <element label="Attachments" max_length="40" name="attachments" type="file_attachment"/>
         <element choice="3" default="Draft" label="Status" max_length="32" name="status" reference="x_173342_cicsv_t1_status" type="reference">
             <choice/>
         </element>
-        <element display="true" label="Title" max_length="80" name="title" type="string"/>
+        <element label="Title" max_length="80" name="title" type="string"/>
+        <element display="true" label="Identifier" max_length="20" name="u_identifier" type="string"/>
+        <element label="Statement" max_length="8000" name="u_statement" type="html"/>
     </element>
 </database>

@@ -10,7 +10,7 @@
         <delete_access>false</delete_access>
         <extension_model/>
         <is_extendable>true</is_extendable>
-        <label>Segment</label>
+        <label>Statement</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_173342_cicsv_t1_segment</name>
         <number_ref/>
@@ -23,14 +23,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-30 10:45:36</sys_created_on>
         <sys_id>911ed1e0db3133008f1daf264896190e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Segment</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Statement</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
         <sys_update_name>sys_db_object_911ed1e0db3133008f1daf264896190e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-30 16:37:35</sys_updated_on>
+        <sys_updated_on>2019-07-04 12:31:09</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_173342_cicsv_t1.user" name="x_173342_cicsv_t1.user">cb473725db2133008f1daf264896198c</user_role>
         <ws_access>true</ws_access>

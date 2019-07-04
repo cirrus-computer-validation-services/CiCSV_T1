@@ -16,7 +16,7 @@
         <number_ref display_value="PROJ">b6d34331db7533008f1daf26489619ed</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Segment" name="x_173342_cicsv_t1_segment">911ed1e0db3133008f1daf264896190e</super_class>
+        <super_class display_value="Statement" name="x_173342_cicsv_t1_segment">911ed1e0db3133008f1daf264896190e</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>
