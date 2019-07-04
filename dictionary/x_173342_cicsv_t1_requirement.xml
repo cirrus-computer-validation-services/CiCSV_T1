@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="x_173342_cicsv_t1_segment" label="Requirement" max_length="40" name="x_173342_cicsv_t1_requirement" sizeclass="7" type="collection">
+    <element audit="true" extends="x_173342_cicsv_t1_segment" label="Requirement" max_length="40" name="x_173342_cicsv_t1_requirement" type="collection">
         <element choice="1" label="Project identifier" mandatory="true" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference">
             <choice/>
         </element>
-        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;var id_value = '';&#13;&#10;&#9;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;// Concatenate the Project Identifier plus the Requirement type + the next requirement number for that type.&#13;&#10;&#9;&#13;&#10;&#9;return 'BADGER';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Requirement identifier" max_length="40" name="u_requirement_identifier" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;var id_value = '';&#10;&#9;&#10;&#9;// Add your code here&#10;&#9;// Concatenate the Project Identifier plus the Requirement type + the next requirement number for that type.&#10;&#9;&#10;&#9;return 'BADGER';  // return the calculated value&#10;&#10;})(current);" label="Requirement identifier" max_length="40" name="u_requirement_identifier" read_only="true" type="string"/>
         <element choice="1" label="Requirement type" mandatory="true" max_length="32" name="u_requirement_type" reference="x_173342_cicsv_t1_requirement_type" type="reference">
             <choice/>
         </element>
