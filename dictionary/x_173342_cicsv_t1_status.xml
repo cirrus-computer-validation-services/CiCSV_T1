@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Status" max_length="40" name="x_173342_cicsv_t1_status" type="collection">
-        <element display="true" label="Status" max_length="30" name="status" type="string"/>
-    </element>
-</database>

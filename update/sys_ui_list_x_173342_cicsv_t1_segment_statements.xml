@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_173342_cicsv_t1_segment" version="2" view="statements">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_173342_cicsv_t1_segment" element="NULL" name="x_173342_cicsv_t1_segment" parent="NULL" relationship="NULL" sys_domain="global" view="5ab10ffcdb2233008f1daf2648961923">96b103b0db6233008f1daf2648961974</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-07 19:26:07</sys_created_on>
+            <sys_id>56b103b0db6233008f1daf2648961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-07 19:26:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_173342_cicsv_t1_segment" element="NULL" name="x_173342_cicsv_t1_segment" parent="NULL" relationship="NULL" sys_domain="global" view="5ab10ffcdb2233008f1daf2648961923">96b103b0db6233008f1daf2648961974</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-07 19:26:07</sys_created_on>
+            <sys_id>5eb103b0db6233008f1daf2648961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-07 19:26:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="x_173342_cicsv_t1_segment" element="NULL" name="x_173342_cicsv_t1_segment" parent="NULL" relationship="NULL" sys_domain="global" view="5ab10ffcdb2233008f1daf2648961923">96b103b0db6233008f1daf2648961974</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-07 19:26:07</sys_created_on>
+            <sys_id>deb103b0db6233008f1daf2648961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-07 19:26:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_173342_cicsv_t1_segment" element="NULL" name="x_173342_cicsv_t1_segment" parent="NULL" relationship="NULL" sys_domain="global" view="5ab10ffcdb2233008f1daf2648961923">96b103b0db6233008f1daf2648961974</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-07 19:26:07</sys_created_on>
+            <sys_id>52b103b0db6233008f1daf2648961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-07 19:26:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_173342_cicsv_t1_segment</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-07 19:26:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>96b103b0db6233008f1daf2648961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_173342_cicsv_t1_segment</sys_name>
+            <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+            <sys_update_name>sys_ui_list_x_173342_cicsv_t1_segment_statements</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-07 19:26:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Statements" name="statements">5ab10ffcdb2233008f1daf2648961923</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

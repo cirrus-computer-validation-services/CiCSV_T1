@@ -4,13 +4,13 @@
             <element>project_id</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>80770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>f76acff4db6233008f1daf264896194f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,27 +18,27 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>04770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>7f6acff4db6233008f1daf264896194f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>project_manager</element>
+            <element>u_state</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>84770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>ff6acff4db6233008f1daf264896194f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.end_split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>08770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>736acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.begin_split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>88770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>f36acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>u_project_sponsors</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>0c770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>776acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>u_project_smes</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>8c770a77db9a33008f1daf2648961907</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>f76acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,41 +102,41 @@
             <element>.split</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>00770a77db9a33008f1daf2648961908</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>7b6acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_project_approvers</element>
+            <element>u_project_manager</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>80770a77db9a33008f1daf2648961908</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>fb6acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>status</element>
+            <element>u_project_approvers</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>04770a77db9a33008f1daf2648961908</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>7f6acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>.end_split</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>84770a77db9a33008f1daf2648961908</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>ff6acff4db6233008f1daf2648961950</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>title</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>08770a77db9a33008f1daf2648961908</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>736acff4db6233008f1daf2648961951</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,27 @@
             <element>u_statement</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-04 12:37:31</sys_created_on>
-            <sys_id>88770a77db9a33008f1daf2648961908</sys_id>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>f36acff4db6233008f1daf2648961951</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-04 12:37:31</sys_updated_on>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-07 20:04:10</sys_created_on>
+            <sys_id>776acff4db6233008f1daf2648961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_project" sys_domain="global" view="Default view">176cfa6cdbf133008f1daf2648961996</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-07 20:04:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
