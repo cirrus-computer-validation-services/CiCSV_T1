@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="Statement" max_length="40" name="x_173342_cicsv_t1_segment" type="collection">
         <element label="Attachments" max_length="40" name="attachments" type="file_attachment"/>
-        <element label="Title" max_length="80" name="title" type="string"/>
-        <element display="true" label="Identifier" max_length="20" name="u_identifier" type="string"/>
+        <element display="true" label="Title" max_length="80" name="title" type="string"/>
+        <element label="Identifier" max_length="20" name="u_identifier" type="string"/>
         <element choice="3" default="10" label="Status" max_length="40" name="u_state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="10" value="10"/>

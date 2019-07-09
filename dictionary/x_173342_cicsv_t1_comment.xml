@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Comment" max_length="40" name="x_173342_cicsv_t1_comment" type="collection">
-        <element label="Comment" max_length="8000" name="u_comment" type="html"/>
+    <element audit="true" label="Comment" max_length="40" name="x_173342_cicsv_t1_comment" type="collection">
+        <element label="Comment" mandatory="true" max_length="8000" name="u_comment" type="html"/>
         <element label="Parent statement" max_length="32" name="u_parent_statement" reference="x_173342_cicsv_t1_segment" type="reference"/>
         <element label="Reply" max_length="32" name="u_reply" reference="x_173342_cicsv_t1_comment" type="reference"/>
         <element display="true" label="Title" mandatory="true" max_length="30" name="u_title" type="string"/>
