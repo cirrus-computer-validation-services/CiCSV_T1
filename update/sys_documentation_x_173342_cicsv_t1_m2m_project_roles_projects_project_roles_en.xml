@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="project_roles" label="Project Roles" language="en" table="x_173342_cicsv_t1_m2m_project_roles_projects">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>project_roles</element>
+            <help/>
+            <hint/>
+            <label>Project Roles</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_m2m_project_roles_projects</name>
+            <plural>Project Roles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 10:31:51</sys_created_on>
+            <sys_id>1e24d617db6233008f1daf26489619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Project Roles</sys_name>
+            <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+            <sys_update_name>sys_documentation_x_173342_cicsv_t1_m2m_project_roles_projects_project_roles_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 10:31:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_173342_cicsv_t1.manageProjectUsers</api_name>
+        <client_callable>false</client_callable>
+        <description>This class manages the user lists defined in the Project record and adds or removes records from the Project Roles table.</description>
+        <name>manageProjectUsers</name>
+        <script><![CDATA[var manageProjectUsers = Class.create();
+manageProjectUsers.prototype = {
+    initialize: function(userType, usersNow, usersThen, projectID) {
+		this.userType = userType;
+		this.usersNow = usersNow;
+		this.usersThen = usersThen;
+		this.projectID = projectID;
+    },
+	
+	processUsers: function() {
+		this.users_now = [];
+		this.users_then = [];
+		gs.info("Processing " + this.userType + " Users. = " + this.usersNow);
+		// Create arrays of the sponsors now and the previous list for comparisons
+		if (this.usersNow != '')
+			this.users_now = this.usersNow.split(",");
+		if (this.usersThen != '')
+			this.users_then = this.usersThen.split(",");
+
+		// Check all the sponsors now against the array of sponsors previous
+		// to see what's new and what's been deleted
+		gs.info("Number of users now = " + this.users_now.length);
+		for (i = 0; i < this.users_now.length; i++) {
+			gs.info("Looking for user: " + this.users_now[i]);
+			// If this sponsor is in the previous list then continue
+			if (this.users_then.indexOf(this.users_now[i]) >= 0)
+				continue;
+
+			// Otherwise this sponsor must be new so add it
+			gs.info("Adding users: " + this.users_now[i]);
+			this.addUser(this.users_now[i], this.projectID);
+		}
+
+		// Check for any sponsors that have been deleted from the list
+		gs.info("Number of users then = " + this.users_then.length);
+		for (i = 0; i < this.users_then.length; i++) {
+			// If this sponsor is in the new list then continue
+			if (this.users_now.indexOf(this.users_then[i]) >= 0)
+				continue;
+
+			// Otherwise this spnsor must have been removed so delete it
+			gs.info("Deleting user: " + this.users_then[i]);
+			this.deleteUser(this.users_then[i], this.projectID);
+		}
+	},
+	
+	addUser: function(user, project) {
+		// Find the sys_id of the user role for the Project Roles table
+		this.role = this.getRoleID(this.userType);
+
+		// This sponsor isn't in the Project Roles table so we must insert it.
+		this.prinsert = new GlideRecord('x_173342_cicsv_t1_project_roles');
+		this.prinsert.setValue('u_project', project);
+		this.prinsert.setValue('u_user', user);
+		this.prinsert.setValue('u_role', this.role);
+		this.prinsert.insert();
+		gs.info("Added user: " + user + " with role: " + this.role + " in project: " + project);
+
+	},
+	
+	deleteUser: function(user, project) {
+		// Find the sys_id of the user role for the Project Roles table
+		this.role = this.getRoleID(this.userType);
+
+		// Find the record to delete
+		this.record = new GlideRecord('x_173342_cicsv_t1_project_roles');
+		this.record.addQuery('u_user', user);
+		this.record.addQuery('u_role', this.role);
+		this.record.addQuery('u_project', project);
+		this.record.query();
+
+		// If it exists, delete it
+		if (this.record.next()) {
+			this.record.deleteRecord();
+			gs.info("Deleted user: " + user + " with role: " + this.role + " in project: " + project);
+		}
+	},
+	
+	getRoleID: function(suffix) {
+	
+		// Get the current scope
+		this.currentScope = gs.getCurrentScopeName();
+		this.userRole = this.currentScope + '.' + suffix;
+
+		// Prepare and query for the current role
+		gs.info("Looking for user role: " + this.userRole);
+		this.role = new GlideRecord('sys_user_role');
+		this.role.addQuery('name', this.userRole);
+		this.role.query();
+
+		if (this.role.next()) {
+			return this.role.sys_id;
+		}
+
+		return '';	
+	},
+
+    type: 'manageProjectUsers'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 12:02:16</sys_created_on>
+        <sys_id>124b266ddb3233008f1daf264896195a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>manageProjectUsers</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_include_124b266ddb3233008f1daf264896195a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 16:12:50</sys_updated_on>
+    </sys_script_include>
+</record_update>

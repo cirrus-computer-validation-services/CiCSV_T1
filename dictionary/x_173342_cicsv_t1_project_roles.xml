@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Project Roles" max_length="40" name="x_173342_cicsv_t1_project_roles" type="collection">
+        <element label="Project" max_length="32" name="u_project" reference="x_173342_cicsv_t1_project" type="reference"/>
+        <element label="Role" max_length="32" name="u_role" reference="sys_user_role" type="reference"/>
+        <element label="User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_role"/>
+        </index>
+        <index name="index2">
+            <element name="u_project"/>
+        </index>
+        <index name="index3">
+            <element name="u_user"/>
+        </index>
+    </element>
+</database>

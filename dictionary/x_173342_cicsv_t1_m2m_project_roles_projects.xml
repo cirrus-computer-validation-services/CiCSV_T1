@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Cicsv T1 M2m Project Roles Projects" max_length="40" name="x_173342_cicsv_t1_m2m_project_roles_projects" type="collection">
+        <element label="Project" max_length="32" name="project" reference="x_173342_cicsv_t1_project" type="reference"/>
+        <element label="Project Roles" max_length="32" name="project_roles" reference="x_173342_cicsv_t1_project_roles" type="reference"/>
+        <index name="index">
+            <element name="project"/>
+        </index>
+        <index name="index2">
+            <element name="project_roles"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_173342_cicsv_t1_project</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_173342_cicsv_t1_project">u_testersVALCHANGES^EQ<item endquery="false" field="u_testers" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Testers</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var users = new manageProjectUsers('test', 
+										  current.u_testers, 
+										  previous.u_testers, 
+										  current.sys_id);
+	users.processUsers();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-23 12:21:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb3937bddb3233008f1daf26489619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Testers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_fb3937bddb3233008f1daf26489619ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-23 12:21:12</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb3937bddb3233008f1daf26489619ce"/>
+</record_update>
