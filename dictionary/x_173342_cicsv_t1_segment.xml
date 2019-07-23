@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="Segment" max_length="40" name="x_173342_cicsv_t1_segment" type="collection">
-        <element label="Attachments" max_length="40" name="attachments" type="file_attachment"/>
-        <element choice="3" default="Draft" label="Status" max_length="32" name="status" reference="x_173342_cicsv_t1_status" type="reference">
+        <element attributes="edge_encryption_enabled=true" label="Attachments" max_length="40" name="attachments" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Draft" label="State" max_length="32" name="status" reference="x_173342_cicsv_t1_status" type="reference">
             <choice/>
         </element>
         <element label="Title" max_length="80" name="title" type="string"/>

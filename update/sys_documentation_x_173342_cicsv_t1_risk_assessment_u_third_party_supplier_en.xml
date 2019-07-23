@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_third_party_supplier" label="Third party supplier?" language="en" table="x_173342_cicsv_t1_risk_assessment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_third_party_supplier</element>
+            <help/>
+            <hint/>
+            <label>Third party supplier?</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_risk_assessment</name>
+            <plural>Third party supplier?s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-22 09:01:13</sys_created_on>
+            <sys_id>5ed22bf7db0233008f1daf26489619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Third party supplier?</sys_name>
+            <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+            <sys_update_name>sys_documentation_x_173342_cicsv_t1_risk_assessment_u_third_party_supplier_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-22 09:01:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

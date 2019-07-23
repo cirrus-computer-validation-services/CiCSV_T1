@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set the colour of the supplier risk field depending on the calculated risk</description>
+        <field>u_supplier_risk</field>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Supplier Risk Colour</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+
+	setColour(control, newValue);	
+}
+
+//
+// Set the colour of a form field according to the value selected.
+//
+function setColour(control, newValue) {
+
+	if (control == "")
+		return;
+	
+	var elementName = control.name;
+	var elementID = g_form.getElement(elementName);
+	
+	switch(newValue) {
+		case "3": elementID.style.backgroundColor = "#FFB4B4"; break;
+		case "2": elementID.style.backgroundColor = "#FFDFB4"; break;
+		case "1": elementID.style.backgroundColor = "#F6FFB4"; break;
+		case "0": elementID.style.backgroundColor = "#C8FFB4"; break;
+		default: elementID.style.backgroundColor = "white"; break; 
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-24 17:21:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>65382fe4db9233008f1daf264896198d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Set Supplier Risk Colour</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_client_65382fe4db9233008f1daf264896198d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-27 16:50:48</sys_updated_on>
+        <table>x_173342_cicsv_t1_risk_assessment</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
