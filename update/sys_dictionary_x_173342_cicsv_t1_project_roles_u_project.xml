@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="x_173342_cicsv_t1_segment" table="x_173342_cicsv_t1_requirement">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_project" table="x_173342_cicsv_t1_project_roles">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
-        <audit>true</audit>
+        <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Project</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,41 +27,41 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>u_project</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_173342_cicsv_t1_requirement</name>
+        <max_length>32</max_length>
+        <name>x_173342_cicsv_t1_project_roles</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_173342_cicsv_t1_project">x_173342_cicsv_t1_project</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>9</sizeclass>
+        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-04 12:04:03</sys_created_on>
-        <sys_id>4b9bde4bdbd633008f1daf26489619c0</sys_id>
+        <sys_created_on>2019-07-15 10:20:48</sys_created_on>
+        <sys_id>b361d293db6233008f1daf26489619f8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_173342_cicsv_t1_requirement</sys_name>
+        <sys_name>Project</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
-        <sys_update_name>sys_dictionary_x_173342_cicsv_t1_requirement_NULL</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-07-02 06:10:17</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_173342_cicsv_t1_project_roles_u_project</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-15 10:20:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
