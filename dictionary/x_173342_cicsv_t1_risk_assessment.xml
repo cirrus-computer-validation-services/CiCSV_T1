@@ -67,7 +67,7 @@
                 <element inactive_on_update="false" label="High" sequence="10" value="4"/>
                 <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
                 <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="40" value="1"/>
+                <element inactive_on_update="false" label="None" sequence="40" value="1"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="System tested?" max_length="40" name="u_system_tested" type="boolean"/>
