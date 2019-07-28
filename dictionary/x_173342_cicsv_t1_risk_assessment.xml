@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" type="collection">
+    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" sizeclass="1" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Documentation comments" max_length="500" name="u_adequate_docs_comments" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Adequate documentation?" max_length="40" name="u_adequate_documentation" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" default="0" label="Assigned criticality" max_length="40" name="u_assigned_criticality" read_only="true" type="integer"/>
@@ -13,20 +13,20 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="GAMP asessment comments" max_length="500" name="u_gamp_comments" type="string"/>
-        <element choice="1" label="GXP assessment" max_length="40" name="u_gxp_assessment" type="choice">
+        <element choice="3" default="4" label="GXP assessment" max_length="40" name="u_gxp_assessment" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="High" sequence="10" value="3"/>
-                <element inactive_on_update="false" label="Medium" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Low" sequence="30" value="1"/>
-                <element inactive_on_update="false" label="None" sequence="40" value="0"/>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="None" sequence="40" value="1"/>
             </choice>
         </element>
         <element label="Health authority regulated comments" max_length="500" name="u_ha_regulated_comments" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="2" label="Health authority regulated?" mandatory="true" max_length="40" name="u_health_authority_regulated" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="Health authority regulated?" mandatory="true" max_length="40" name="u_health_authority_regulated" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="2"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="1"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="30" value="0"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="30" value="0"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Known supplier?" max_length="40" name="u_known_supplier" type="boolean"/>
@@ -36,39 +36,38 @@
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="2"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="1"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="30" value="0"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="2" label="Process supported?" mandatory="true" max_length="40" name="u_process_supported" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="Process supported?" mandatory="true" max_length="40" name="u_process_supported" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="2"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="1"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="30" value="0"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="30" value="0"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Process supported comments" max_length="500" name="u_proc_support_comments" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Project identifier" mandatory="true" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk assessment" max_length="40" name="u_risk_assessment" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk assessment" max_length="40" name="u_risk_assessment" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="High" sequence="10" value="3"/>
-                <element inactive_on_update="false" label="Medium" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Low" sequence="30" value="1"/>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk category" max_length="40" name="u_risk_category" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk category" max_length="40" name="u_risk_category" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="High" sequence="10" value="3"/>
-                <element inactive_on_update="false" label="Medium" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Low" sequence="30" value="1"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="40" value="0"/>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="40" value="1"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Supplier risk" max_length="40" name="u_supplier_risk" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Supplier risk" max_length="40" name="u_supplier_risk" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="High" sequence="10" value="3"/>
-                <element inactive_on_update="false" label="Medium" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Low" sequence="30" value="1"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="40" value="0"/>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="40" value="1"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="System tested?" max_length="40" name="u_system_tested" type="boolean"/>
