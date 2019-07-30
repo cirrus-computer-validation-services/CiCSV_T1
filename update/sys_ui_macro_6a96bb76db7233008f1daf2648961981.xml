@@ -10,17 +10,101 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-07-26 14:50:04</sys_created_on>
         <sys_id>6a96bb76db7233008f1daf2648961981</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>calcriskassessment</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
         <sys_update_name>sys_ui_macro_6a96bb76db7233008f1daf2648961981</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-28 20:33:15</sys_updated_on>
+        <sys_updated_on>2019-07-30 14:53:38</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	<script>
+		
+		//
+		// Calculate the final risk from the GXP risk assessment
+		// and the calculated risk summary.
+		//
+		function calcfinalrisk()
+		{
+			// Get the values for the GXP Assessment and the Risk Category
+			var gxpAssessment = g_form.getValue('u_gxp_assessment');
+			var riskCategory = g_form.getValue('u_risk_category');
+		
+			// Calculate and set the risk assessment
+			if  (gxpAssessment == '4') {
+				if (riskCategory == '2') {
+					g_form.setValue('u_risk_assessment', '3');
+				} else {
+					g_form.setValue('u_risk_assessment', '4');
+				}
+			} else if (gxpAssessment == '3') {
+				if (riskCategory == '4') {
+					g_form.setValue('u_risk_assessment', '4');
+				} else {
+					g_form.setValue('u_risk_assessment', '3');
+				}
+			} else {
+				if (riskCategory == '4') {
+					g_form.setValue('u_risk_assessment', '3');
+				} else {
+					g_form.setValue('u_risk_assessment', '2');
+				}
+			}
+			return;
+		}
+		
+		
+		//
+		// Calculate the Risk Summary based on the software category (GAMP Assessment)
+		// and the calculated Supplier Risk
+		//
+		function calcrisksummary() {
+		
+			// Get all the values associated with calculating Risk Category
+			var softwareCategory = g_form.getValue('u_gamp_assessment');
+			var supplierRisk = g_form.getValue('u_supplier_risk');
+			
+			switch(softwareCategory) {
+				case '5':
+					g_form.setValue('u_risk_category', '4'); // High
+					break;
+				case '4':
+					if (supplierRisk == '2') {
+						g_form.setValue('u_risk_category', '3'); // Medium
+					} else if (supplierRisk == '1') {
+						g_form.setValue('u_risk_category', '1'); // N/A
+					} else {
+						g_form.setValue('u_risk_category', '4'); // High
+					}
+					break;
+				case '3':
+					if (supplierRisk == '2') {
+						g_form.setValue('u_risk_category', '2'); // Low
+					} else if (supplierRisk == '1') {
+						g_form.setValue('u_risk_category', '1'); // N/A
+					} else {
+						g_form.setValue('u_risk_category', '3'); // Medium
+					}
+					break;
+				case '1':
+					if (supplierRisk == '1') {
+						g_form.setValue('u_risk_category', '3'); // Medium
+					} else {
+						g_form.setValue('u_risk_category', '2'); // Low
+					}
+					break;
+			}
+			return;		
+		}
+		
+		//
+		// Calculate the GXP risk based on:
+		// If the software is Patient Affecting
+		// If the system supports specific Health Authority regulations
+		// If the system is supported by a fomalized process
+		//
 		function calcgxpassessment() {
 
 			// Get all the values relevant to GXP Assessment
@@ -83,7 +167,9 @@
 	
 		}
 		
+		//
 		// Calculate the suppler risk
+		//
 		function calcsupplierrisk() {
 	
 		// Get the values of the associated fields

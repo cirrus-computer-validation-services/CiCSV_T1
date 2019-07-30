@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" sizeclass="1" type="collection">
+    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" sizeclass="2" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Documentation comments" max_length="500" name="u_adequate_docs_comments" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Adequate documentation?" max_length="40" name="u_adequate_documentation" type="boolean"/>
+        <element label="Adequate documentation evidence" max_length="40" name="u_adequate_documentation_evidence" type="file_attachment"/>
         <element attributes="edge_encryption_enabled=true" default="0" label="Assigned criticality" max_length="40" name="u_assigned_criticality" read_only="true" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Complex project?" max_length="40" name="u_complex_project" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="5" label="GAMP assessment" mandatory="true" max_length="40" name="u_gamp_assessment" type="choice">
@@ -31,6 +32,7 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Known supplier?" max_length="40" name="u_known_supplier" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Known supplier comments" max_length="500" name="u_known_supplier_comments" type="string"/>
+        <element label="Known supplier evidence" max_length="40" name="u_known_supplier_evidence" type="file_attachment"/>
         <element label="Patient affecting comments" max_length="500" name="u_patient_affected_comments" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="2" hint="Does this system directly affect the quality and/or efficacy of the medical device, and/or the safety of the patient/consumer using the medical device and/or the integrity of such data?" label="Patient affecting?" mandatory="true" max_length="40" name="u_patient_affecting" type="choice">
             <choice>
@@ -71,7 +73,8 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="System tested?" max_length="40" name="u_system_tested" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="System test comments" max_length="500" name="u_system_tested_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="System tested comments" max_length="500" name="u_system_tested_comments" type="string"/>
+        <element label="System tested evidence" max_length="40" name="u_system_tested_evidence" type="file_attachment"/>
         <element attributes="edge_encryption_enabled=true" label="Third party comments" max_length="500" name="u_third_party_comments" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Third party supplier?" max_length="40" name="u_third_party_supplier" type="boolean"/>
     </element>
