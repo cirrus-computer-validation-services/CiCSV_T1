@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Macro with functions to perform risk calculations for the risk assessment form</description>
+        <media_type/>
+        <name>calcriskassessment</name>
+        <scoped_name>x_173342_cicsv_t1_calcriskassessment</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-01 12:13:40</sys_created_on>
+        <sys_id>16ad0ebcdb8373008f1daf264896197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>calcriskassessment</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_ui_macro_16ad0ebcdb8373008f1daf264896197f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-01 12:13:40</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script>
+		
+		//
+		// Calculate the final risk from the GXP risk assessment
+		// and the calculated risk summary.
+		//
+		function calcfinalrisk()
+		{
+			// Get the values for the GXP Assessment and the Risk Category
+			var gxpAssessment = g_form.getValue('u_gxp_assessment');
+			var riskCategory = g_form.getValue('u_risk_category');
+		
+			// Calculate and set the risk assessment
+			if  (gxpAssessment == '4') {
+				if (riskCategory == '2') {
+					g_form.setValue('u_risk_assessment', '3');
+				} else {
+					g_form.setValue('u_risk_assessment', '4');
+				}
+			} else if (gxpAssessment == '3') {
+				if (riskCategory == '4') {
+					g_form.setValue('u_risk_assessment', '4');
+				} else {
+					g_form.setValue('u_risk_assessment', '3');
+				}
+			} else {
+				if (riskCategory == '4') {
+					g_form.setValue('u_risk_assessment', '3');
+				} else {
+					g_form.setValue('u_risk_assessment', '2');
+				}
+			}
+			return;
+		}
+		
+		
+		//
+		// Calculate the Risk Summary based on the software category (GAMP Assessment)
+		// and the calculated Supplier Risk
+		//
+		function calcrisksummary() {
+		
+			// Get all the values associated with calculating Risk Category
+			var softwareCategory = g_form.getValue('u_gamp_assessment');
+			var supplierRisk = g_form.getValue('u_supplier_risk');
+			
+			switch(softwareCategory) {
+				case '5':
+					g_form.setValue('u_risk_category', '4'); // High
+					break;
+				case '4':
+					if (supplierRisk == '2') {
+						g_form.setValue('u_risk_category', '3'); // Medium
+					} else if (supplierRisk == '1') {
+						g_form.setValue('u_risk_category', '1'); // N/A
+					} else {
+						g_form.setValue('u_risk_category', '4'); // High
+					}
+					break;
+				case '3':
+					if (supplierRisk == '2') {
+						g_form.setValue('u_risk_category', '2'); // Low
+					} else if (supplierRisk == '1') {
+						g_form.setValue('u_risk_category', '1'); // N/A
+					} else {
+						g_form.setValue('u_risk_category', '3'); // Medium
+					}
+					break;
+				case '1':
+					if (supplierRisk == '1') {
+						g_form.setValue('u_risk_category', '3'); // Medium
+					} else {
+						g_form.setValue('u_risk_category', '2'); // Low
+					}
+					break;
+			}
+			return;		
+		}
+		
+		//
+		// Calculate the GXP risk based on:
+		// If the software is Patient Affecting
+		// If the system supports specific Health Authority regulations
+		// If the system is supported by a fomalized process
+		//
+		function calcgxpassessment() {
+
+			// Get all the values relevant to GXP Assessment
+			var patientAffecting = g_form.getValue('u_patient_affecting');
+			var haRegulated = g_form.getValue('u_health_authority_regulated');
+			var processSupported = g_form.getValue('u_process_supported');
+		
+			// alert('PA = ' + patientAffecting + ' HA = ' + haRegulated + ' PS = ' + processSupported);
+
+			if (patientAffecting == '2')
+				return 4; // Return High
+
+			if (haRegulated == '2') {
+				if (processSupported == '1') {
+					return 3; // Medium
+				} else if (processSupported == '2') {
+					return 2; // Low
+				}
+			}
+
+			return 1; // None
+		}
+		
+		// Sets the bacgroud colour of a data field
+		// Depending on the value selected
+		function setColour(control, newValue) {
+
+			if (control == '')
+				return;
+
+			var elementName = control.name;
+			var elementID = g_form.getElement(elementName);
+
+			switch(newValue) {
+				case '4': 
+					elementID.style.backgroundColor = '#e60000'; 
+					elementID.style.color = 'white';
+					break;
+				case '3': 
+					elementID.style.backgroundColor = '#FFB4B4'; 
+					elementID.style.color = 'black';
+					break;
+				case '2': 
+					elementID.style.backgroundColor = '#FFDFB4'; 
+					elementID.style.color = 'black';		
+					break;
+				case '1': 
+					elementID.style.backgroundColor = '#F6FFB4'; 
+					elementID.style.color = 'black';		
+					break;
+				case '0': 
+					elementID.style.backgroundColor = '#C8FFB4'; 
+					elementID.style.color = 'black';		
+					break;
+				default: 
+					elementID.style.backgroundColor = 'white'; 
+					elementID.style.color = 'black';		
+					break; 
+			}
+	
+		}
+		
+		//
+		// Calculate the suppler risk
+		//
+		function calcsupplierrisk() {
+	
+		// Get the values of the associated fields
+		var tps = g_form.getValue('u_third_party_supplier');
+		var  ks = g_form.getValue('u_known_supplier');
+		var  ad = g_form.getValue('u_adequate_documentation');
+		var  st = g_form.getValue('u_system_tested');
+
+		// If the software isn't from a third party then the supplier risk is None
+		// alert('Third party supplier value = ' + tps);
+		if (tps == 'false') {
+			// alert('Setting supplier risk to high');
+			g_form.setValue('u_supplier_risk', '1');
+			return;
+		}
+
+		// If the software is from an third party and everything else is false
+		// then the risk is high
+		if (tps == 'true') {
+			if (ks == 'false') {
+				if (ad == 'false') {
+					if (st == 'false') {
+						g_form.setValue('u_supplier_risk', '4');
+						return;
+					}
+				}
+			}
+		}
+
+		// If all are true then the risk is low
+		if (tps == 'true') {
+			if (ks == 'true') {
+				if (ad == 'true') {
+					if (st == 'true') {
+						g_form.setValue('u_supplier_risk', '2');
+						return;
+					}
+				}
+			}
+		}
+
+		// For all other cases the risk is medium
+		// alert('Setting supplier risk to medium');
+		g_form.setValue('u_supplier_risk', '3');
+		return;
+	}
+	</script>	
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>
