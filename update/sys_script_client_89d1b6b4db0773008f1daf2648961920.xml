@@ -31,7 +31,7 @@
 		g_form.setValue('u_process_supported', '2');
 	}
 	// call calcgxpassessment() to set the GXP risk value
-	g_form.setValue('u_gxp_assessment', calcgxpassessment());
+	calcgxpassessment();
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -39,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>89d1b6b4db0773008f1daf2648961920</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Set GXP on Health Authority Regulated</sys_name>
         <sys_overrides/>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
@@ -47,7 +47,7 @@
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
         <sys_update_name>sys_script_client_89d1b6b4db0773008f1daf2648961920</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-01 15:30:40</sys_updated_on>
+        <sys_updated_on>2019-08-01 16:46:33</sys_updated_on>
         <table>x_173342_cicsv_t1_risk_assessment</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

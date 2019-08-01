@@ -12,11 +12,12 @@
             </choice>
         </element>
         <element label="GAMP category comments" max_length="4000" name="u_gamp_category_comments" type="string"/>
-        <element choice="3" default="4" label="GXP criticality" max_length="40" name="u_gxp_criticality" read_only="true" type="choice">
+        <element choice="1" label="GXP criticality" max_length="40" name="u_gxp_criticality" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="High" sequence="10" value="4"/>
                 <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
                 <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="None" sequence="40" value="1"/>
             </choice>
         </element>
         <element label="Health authority comments" max_length="4000" name="u_health_authority_comments" type="string"/>

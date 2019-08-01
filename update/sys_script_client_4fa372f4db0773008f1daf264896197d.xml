@@ -12,7 +12,6 @@
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 	if (isLoading || newValue === '') {
-		alert("NewValue = " + newValue);
 		if (newValue == '3') {
 			g_form.addOption('u_health_authority_regulated', '1', 'Not Applicable');
 			g_form.setValue('u_health_authority_regulated', '1');
@@ -41,7 +40,7 @@
 			break;
 	}
 
-	g_form.setValue('u_gxp_assessment', calcgxpassessment());
+	calcgxpassessment();
 	
 }
 ]]></script>
@@ -51,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4fa372f4db0773008f1daf264896197d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Set GXP on Patient Affecting</sys_name>
         <sys_overrides/>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
@@ -59,7 +58,7 @@
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
         <sys_update_name>sys_script_client_4fa372f4db0773008f1daf264896197d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-01 15:33:24</sys_updated_on>
+        <sys_updated_on>2019-08-01 16:46:59</sys_updated_on>
         <table>x_173342_cicsv_t1_risk_assessment</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
