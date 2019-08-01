@@ -20,11 +20,10 @@
             </choice>
         </element>
         <element label="Health authority comments" max_length="4000" name="u_health_authority_comments" type="string"/>
-        <element choice="3" default="1" label="Health authority regulated" max_length="40" name="u_health_authority_regulated" type="choice">
+        <element choice="1" label="Health authority regulated" max_length="40" name="u_health_authority_regulated" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Not applicable" sequence="30" value="1"/>
             </choice>
         </element>
         <element label="Known supplier?" max_length="40" name="u_known_supplier" type="boolean"/>
@@ -37,11 +36,10 @@
             </choice>
         </element>
         <element label="Patient affecting comments" max_length="4000" name="u_patient_affecting_comments" type="string"/>
-        <element choice="3" default="1" label="Process supported" max_length="40" name="u_process_supported" type="choice">
+        <element choice="1" label="Process supported" max_length="40" name="u_process_supported" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Not Applicable" sequence="30" value="1"/>
             </choice>
         </element>
         <element label="Process supported comments" max_length="4000" name="u_process_supported_comments" type="string"/>

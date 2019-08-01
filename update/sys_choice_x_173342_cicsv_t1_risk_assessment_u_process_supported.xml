@@ -38,25 +38,6 @@
             <sys_updated_on>2019-08-01 10:26:24</sys_updated_on>
             <value>2</value>
         </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_process_supported</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Not Applicable</label>
-            <language>en</language>
-            <name>x_173342_cicsv_t1_risk_assessment</name>
-            <sequence>30</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-08-01 10:25:39</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>45b5797cdb4373008f1daf26489619a1</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-08-01 10:26:33</sys_updated_on>
-            <value>1</value>
-        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_process_supported</element>
             <name>x_173342_cicsv_t1_risk_assessment</name>
