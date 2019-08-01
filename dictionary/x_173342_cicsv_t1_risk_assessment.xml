@@ -3,7 +3,7 @@
         <element label="Adequate documentation?" max_length="40" name="u_adequate_documentation" type="boolean"/>
         <element label="Adequate documentation attachment" max_length="40" name="u_adequate_documentation_attachment" type="file_attachment"/>
         <element label="Adequate documentation comments" max_length="2000" name="u_adequate_documentation_comments" type="string"/>
-        <element choice="3" default="5" label="GAMP category" max_length="40" name="u_gamp_category" type="choice">
+        <element choice="3" default="5" label="GAMP category" mandatory="true" max_length="40" name="u_gamp_category" type="choice">
             <choice>
                 <element inactive_on_update="false" label="GAMP 5" sequence="10" value="5"/>
                 <element inactive_on_update="false" label="GAMP 4" sequence="20" value="4"/>
@@ -11,6 +11,7 @@
                 <element inactive_on_update="false" label="GAMP 1" sequence="40" value="1"/>
             </choice>
         </element>
+        <element label="GAMP category comments" max_length="4000" name="u_gamp_category_comments" type="string"/>
         <element choice="3" default="4" label="GXP criticality" max_length="40" name="u_gxp_criticality" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="High" sequence="10" value="4"/>
@@ -18,7 +19,8 @@
                 <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
             </choice>
         </element>
-        <element choice="3" default="3" label="Health authority regulated" max_length="40" name="u_health_authority_regulated" type="choice">
+        <element label="Health authority comments" max_length="4000" name="u_health_authority_comments" type="string"/>
+        <element choice="3" default="3" label="Health authority regulated" mandatory="true" max_length="40" name="u_health_authority_regulated" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="2"/>
@@ -34,13 +36,15 @@
                 <element inactive_on_update="false" label="No" sequence="20" value="2"/>
             </choice>
         </element>
-        <element choice="3" default="3" label="Process supported" max_length="40" name="u_process_supported" type="choice">
+        <element label="Patient affecting comments" max_length="4000" name="u_patient_affecting_comments" type="string"/>
+        <element choice="3" default="3" label="Process supported" mandatory="true" max_length="40" name="u_process_supported" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
                 <element inactive_on_update="false" label="No" sequence="20" value="2"/>
                 <element inactive_on_update="false" label="Not Applicable" sequence="30" value="1"/>
             </choice>
         </element>
+        <element label="Process supported comments" max_length="4000" name="u_process_supported_comments" type="string"/>
         <element label="Project identifier" mandatory="true" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
         <element choice="3" default="4" label="Risk assessment" max_length="40" name="u_risk_assessment" read_only="true" type="choice">
             <choice>
