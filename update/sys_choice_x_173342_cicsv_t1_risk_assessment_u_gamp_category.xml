@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_gamp_category" table="x_173342_cicsv_t1_risk_assessment" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gamp_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GAMP 5</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_risk_assessment</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-01 10:30:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a5a6f1bcdb4373008f1daf26489619f9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-01 10:31:06</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gamp_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GAMP 4</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_risk_assessment</name>
+            <sequence>20</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-01 10:30:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ec6b97cdb4373008f1daf2648961915</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-01 10:31:10</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gamp_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GAMP 3</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_risk_assessment</name>
+            <sequence>30</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-01 10:30:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44d63d7cdb4373008f1daf26489619cc</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-01 10:31:16</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gamp_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GAMP 1</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_risk_assessment</name>
+            <sequence>40</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-01 10:30:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6d635bcdb4373008f1daf2648961983</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-01 10:31:57</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_gamp_category</element>
+            <name>x_173342_cicsv_t1_risk_assessment</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-01 10:30:07</sys_created_on>
+            <sys_id>22c6b1bcdb4373008f1daf2648961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_gamp_category</sys_name>
+            <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+            <sys_update_name>sys_choice_x_173342_cicsv_t1_risk_assessment_u_gamp_category</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-01 10:30:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

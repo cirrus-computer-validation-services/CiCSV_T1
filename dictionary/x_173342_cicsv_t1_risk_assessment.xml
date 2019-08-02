@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" type="collection">
+        <element label="Adequate documentation?" max_length="40" name="u_adequate_documentation" type="boolean"/>
+        <element label="Adequate documentation attachment" max_length="40" name="u_adequate_documentation_attachment" type="file_attachment"/>
+        <element label="Adequate documentation comments" max_length="2000" name="u_adequate_documentation_comments" type="string"/>
+        <element choice="3" default="5" label="GAMP category" mandatory="true" max_length="40" name="u_gamp_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="GAMP 5" sequence="10" value="5"/>
+                <element inactive_on_update="false" label="GAMP 4" sequence="20" value="4"/>
+                <element inactive_on_update="false" label="GAMP 3" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="GAMP 1" sequence="40" value="1"/>
+            </choice>
+        </element>
+        <element label="GAMP category comments" max_length="4000" name="u_gamp_category_comments" type="string"/>
+        <element choice="1" label="GXP criticality" max_length="40" name="u_gxp_criticality" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="None" sequence="40" value="1"/>
+            </choice>
+        </element>
+        <element label="Health authority comments" max_length="4000" name="u_health_authority_comments" type="string"/>
+        <element choice="1" label="Health authority regulated" max_length="40" name="u_health_authority_regulated" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
+                <element inactive_on_update="false" label="No" sequence="20" value="2"/>
+            </choice>
+        </element>
+        <element label="Known supplier?" max_length="40" name="u_known_supplier" type="boolean"/>
+        <element label="Known supplier attachment" max_length="40" name="u_known_supplier_attachment" type="file_attachment"/>
+        <element label="Known supplier comments" max_length="2000" name="u_known_supplier_comments" type="string"/>
+        <element choice="3" default="3" label="Patient affecting" max_length="40" name="u_patient_affecting" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
+                <element inactive_on_update="false" label="No" sequence="20" value="2"/>
+            </choice>
+        </element>
+        <element label="Patient affecting comments" max_length="4000" name="u_patient_affecting_comments" type="string"/>
+        <element choice="1" label="Process supported" max_length="40" name="u_process_supported" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="10" value="3"/>
+                <element inactive_on_update="false" label="No" sequence="20" value="2"/>
+            </choice>
+        </element>
+        <element label="Process supported comments" max_length="4000" name="u_process_supported_comments" type="string"/>
+        <element label="Project identifier" mandatory="true" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
+        <element choice="3" default="4" label="Risk assessment" max_length="40" name="u_risk_assessment" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="None" sequence="40" value="1"/>
+            </choice>
+        </element>
+        <element choice="3" default="4" label="Risk category" max_length="40" name="u_risk_category" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="40" value="1"/>
+            </choice>
+        </element>
+        <element choice="3" default="4" label="Supplier risk" max_length="40" name="u_supplier_risk" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="10" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="None" sequence="40" value="1"/>
+            </choice>
+        </element>
+        <element label="System tested?" max_length="40" name="u_system_tested" type="boolean"/>
+        <element label="System tested attachment" max_length="40" name="u_system_tested_attachment" type="file_attachment"/>
+        <element label="System tested comments" max_length="2000" name="u_system_tested_comments" type="string"/>
+        <element label="Third party supplier?" max_length="40" name="u_third_party_supplier" type="boolean"/>
+        <element label="Third party supplier attachment" max_length="40" name="u_third_party_supplier_attachment" type="file_attachment"/>
+        <element label="Third party supplier comments" max_length="2000" name="u_third_party_supplier_comments" type="string"/>
+    </element>
+</database>

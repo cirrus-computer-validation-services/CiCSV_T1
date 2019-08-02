@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_system_tested_comments</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-01 12:37:03</sys_created_on>
+        <sys_id>f3b31eb0dbc373008f1daf26489619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_system_tested_comments</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f3b31eb0dbc373008f1daf26489619bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-01 12:37:03</sys_updated_on>
+        <table>x_173342_cicsv_t1_risk_assessment</table>
+        <ui_policy display_value="Set system tested comments required">b1939ab0dbc373008f1daf26489619a4</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

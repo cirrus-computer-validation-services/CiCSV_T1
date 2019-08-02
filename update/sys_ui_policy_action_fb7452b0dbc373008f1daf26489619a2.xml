@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>true</cleared>
+        <disabled>true</disabled>
+        <field>u_system_tested</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-01 12:40:17</sys_created_on>
+        <sys_id>fb7452b0dbc373008f1daf26489619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_system_tested</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_ui_policy_action_fb7452b0dbc373008f1daf26489619a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-01 12:40:17</sys_updated_on>
+        <table>x_173342_cicsv_t1_risk_assessment</table>
+        <ui_policy display_value="Set fields read-only change of 3rd party supplier">64f39eb0dbc373008f1daf26489619d7</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>
