@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" type="collection">
+    <element extends="x_173342_cicsv_t1_segment" label="Risk assessment" max_length="40" name="x_173342_cicsv_t1_risk_assessment" sizeclass="1" type="collection">
         <element label="Adequate documentation?" max_length="40" name="u_adequate_documentation" type="boolean"/>
         <element label="Adequate documentation attachment" max_length="40" name="u_adequate_documentation_attachment" type="file_attachment"/>
         <element label="Adequate documentation comments" max_length="2000" name="u_adequate_documentation_comments" type="string"/>

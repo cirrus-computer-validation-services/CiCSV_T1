@@ -5,6 +5,7 @@
         <available_for_filter>true</available_for_filter>
         <available_for_ref_qual>false</available_for_ref_qual>
         <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <filter_by_schedule/>
         <label>CiCSV filter users</label>
         <order/>
         <roles/>
