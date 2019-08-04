@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_173342_cicsv_t1_requirement</name>
+        <name>x_173342_cicsv_t1_m2m_requirement_projects</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-04 12:04:04</sys_created_on>
-        <sys_id>cd5d3a28db8b33008f1daf2648961975</sys_id>
+        <sys_created_on>2019-06-06 12:42:30</sys_created_on>
+        <sys_id>5dd95235db8b33008f1daf26489619a3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_173342_cicsv_t1_requirement</sys_name>
+        <sys_name>x_173342_cicsv_t1_m2m_requirement_projects</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
-        <sys_update_name>ua_table_licensing_config_cd5d3a28db8b33008f1daf2648961975</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_5dd95235db8b33008f1daf26489619a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-04 12:04:04</sys_updated_on>
+        <sys_updated_on>2019-06-06 12:42:30</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>
