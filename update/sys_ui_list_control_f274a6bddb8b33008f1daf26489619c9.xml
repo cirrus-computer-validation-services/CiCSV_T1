@@ -8,10 +8,10 @@
         <filter_condition/>
         <filter_roles/>
         <hierarchical_lists>true</hierarchical_lists>
-        <label>Comment</label>
+        <label>Replies</label>
         <link_condition/>
         <link_roles/>
-        <list_edit_insert_row>false</list_edit_insert_row>
+        <list_edit_insert_row>true</list_edit_insert_row>
         <list_edit_ref_qual_tag/>
         <list_edit_type>disabled</list_edit_type>
         <name>x_173342_cicsv_t1_comment</name>
@@ -21,24 +21,24 @@
         <omit_drilldown_link>false</omit_drilldown_link>
         <omit_edit_button>true</omit_edit_button>
         <omit_filters>false</omit_filters>
-        <omit_if_empty>false</omit_if_empty>
+        <omit_if_empty>true</omit_if_empty>
         <omit_links>false</omit_links>
         <omit_new_button>true</omit_new_button>
-        <related_list/>
+        <related_list>x_173342_cicsv_t1_comment.u_reply</related_list>
         <sys_class_name>sys_ui_list_control</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-08-02 15:40:19</sys_created_on>
+        <sys_created_on>2019-08-04 16:23:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>42278099db43b3008f1daf26489619c4</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>f274a6bddb8b33008f1daf26489619c9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_173342_cicsv_t1_comment</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
-        <sys_update_name>sys_ui_list_control_42278099db43b3008f1daf26489619c4</sys_update_name>
+        <sys_update_name>sys_ui_list_control_f274a6bddb8b33008f1daf26489619c9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-07 14:09:04</sys_updated_on>
+        <sys_updated_on>2019-08-07 15:20:05</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

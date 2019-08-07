@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Comment" max_length="40" name="x_173342_cicsv_t1_comment" type="collection">
         <element label="Comment" mandatory="true" max_length="8000" name="u_comment" type="html"/>
+        <element choice="3" default="0" label="State" max_length="40" name="u_comment_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Decision" sequence="10" value="0"/>
+                <element inactive_on_update="false" label="Accepted" sequence="20" value="1"/>
+                <element inactive_on_update="false" label="Rejected" sequence="30" value="2"/>
+            </choice>
+        </element>
         <element label="Parent statement" max_length="32" name="u_parent_statement" reference="x_173342_cicsv_t1_segment" type="reference"/>
         <element label="Reply" max_length="32" name="u_reply" reference="x_173342_cicsv_t1_comment" type="reference"/>
         <element display="true" label="Title" mandatory="true" max_length="30" name="u_title" type="string"/>
