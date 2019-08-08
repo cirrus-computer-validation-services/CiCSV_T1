@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>Reopen Comment</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Reopen a comment thread that is in a Rejected state</comments>
+        <condition>current.sys_created_by == current.u_parent_statement.sys_created_by  &amp;&amp; current.u_parent_statement.sys_created_by == gs.getUserName() &amp;&amp; current.u_comment_state == '2';</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint>Re-oepen this comment thread for further discussion</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Reopen Comment</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[reopenComment(current.sys_id);
+
+function reopenComment(sys_id) {
+	// 
+	// Drill down through all child records
+	//
+	var children = new GlideRecord('x_173342_cicsv_t1_comment');
+	children.addQuery('u_reply', sys_id);
+	children.query();
+	
+	while(children.next()) {
+		reopenComment(children.sys_id);
+		children.u_comment_state = '0';
+		children.update();
+	}
+	
+	//
+	// When we get back to here set this recodd to accepted.
+	//
+	// gs.info("Updating comment state for comment: " + sys_id);
+	current.u_comment_state = '0';
+	current.update();
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-08 19:48:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e19ffc7dbc333008f1daf26489619dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Reopen Comment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_ui_action_8e19ffc7dbc333008f1daf26489619dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-08 19:50:03</sys_updated_on>
+        <table>x_173342_cicsv_t1_comment</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
