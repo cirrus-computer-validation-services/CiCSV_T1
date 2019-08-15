@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Sets various field values for the Comment when the record is loaded</description>
+        <field>u_comment</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Comment fields onLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	// Set the comment history invisible if it's empty
+	var u_comment_history = g_form.getValue('u_comment_history');
+	
+	if (u_comment_history == '')
+		g_form.setVisible('u_comment_history', false);
+	g_form.setVisible('u_history_text', false);
+	g_form.setReadOnly('u_comment_history', true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-11 20:56:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e935e7c4db1373008f1daf26489619a3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Set Comment fields onLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_client_e935e7c4db1373008f1daf26489619a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-15 13:39:47</sys_updated_on>
+        <table>x_173342_cicsv_t1_comment</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
