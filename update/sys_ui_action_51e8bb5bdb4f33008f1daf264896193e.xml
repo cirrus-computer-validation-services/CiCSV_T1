@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Accept Comment</action_name>
+        <action_name>accept_comment</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments>Recursively sets the Comment and all its children records to accepted.</comments>
-        <condition>current.sys_created_by == current.u_parent_statement.sys_created_by  &amp;&amp; current.u_parent_statement.sys_created_by == gs.getUserName() &amp;&amp; current.u_comment_state == '0';</condition>
+        <comments/>
+        <condition> current.u_title != '' &amp;&amp; current.u_comment != '' &amp;&amp;  current.u_parent_statement.sys_created_by == gs.getUserName() &amp;&amp; current.u_comment_state == '0';</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -15,8 +15,8 @@
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
-        <hint>Click this button to accept and lock the comment thread.</hint>
-        <isolate_script>true</isolate_script>
+        <hint/>
+        <isolate_script>false</isolate_script>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
@@ -26,52 +26,95 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Accept comment</name>
-        <onclick>acceptComment(current.sys_id)</onclick>
+        <onclick>doConfirmAccept()</onclick>
         <order>100</order>
-        <script><![CDATA[acceptComment(current.sys_id);
+        <script><![CDATA[function doConfirmAccept() {
+	var reason = '';
+	
+	while (reason == '') {
+		reason = prompt("Enter your reasons for accepting this comment.");
+		if (reason == null) {
+			return false;
+		}
+	}
+	// Do something with the reason here
+	g_form.setValue('u_history_text', reason);
+	
+	gsftSubmit(null, g_form.getFormElement(), 'accept_comment');
+	
+	return true;
+}
 
-function acceptComment(sys_id) {
+
+if(typeof window == 'undefined') 
+	acceptComment(current.sys_id, 0);
+
+function acceptComment(sys_id, level) {
 	// 
 	// Drill down through all child records
 	//
+	gs.info("Updating comment state for comment: " + sys_id);
 	var children = new GlideRecord('x_173342_cicsv_t1_comment');
 	children.addQuery('u_reply', sys_id);
 	children.query();
 	
 	while(children.next()) {
-		acceptComment(children.sys_id);
+		acceptComment(children.sys_id, level + 1);
 		children.u_comment_state = '1';
 		children.update();
 	}
 	
 	//
-	// When we get back to here set this recodd to accepted.
+	// Update the comment history if this is the actual comment 
+	// and not a reply
 	//
-	// gs.info("Updating comment state for comment: " + sys_id);
+	if (level == 0) {
+		var comment = current.u_comment_history;
+		var newComment = '';
+		var dt = new Date();
+
+		//
+		// Format the string to add at the start of the history
+		//
+		newComment = gs.getUserName() + ' ' + dt.toUTCString();
+		newComment  += '\nAccepted: ' + current.u_history_text;
+
+		//
+		// Recreate the comment history with the reopen reason at the start
+		//
+		current.u_comment_history = newComment + '\n\n' + comment;
+		current.u_history_text = '';
+	}
+	
+	//
+	// When we get back to here set this record to accepted.
+	//
 	current.u_comment_state = '1';
 	current.update();
-}]]></script>
+}
+
+]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-08-05 13:51:26</sys_created_on>
+        <sys_created_on>2019-08-09 14:25:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>862903c6db0333008f1daf2648961978</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_id>51e8bb5bdb4f33008f1daf264896193e</sys_id>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Accept comment</sys_name>
         <sys_overrides/>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
-        <sys_update_name>sys_ui_action_862903c6db0333008f1daf2648961978</sys_update_name>
+        <sys_update_name>sys_ui_action_51e8bb5bdb4f33008f1daf264896193e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-08 13:59:45</sys_updated_on>
+        <sys_updated_on>2019-08-15 14:11:06</sys_updated_on>
         <table>x_173342_cicsv_t1_comment</table>
         <ui11_compatible>true</ui11_compatible>
-        <ui16_compatible>true</ui16_compatible>
+        <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
 </record_update>
