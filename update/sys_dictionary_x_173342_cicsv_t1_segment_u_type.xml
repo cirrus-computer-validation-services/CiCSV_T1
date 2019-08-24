@@ -53,7 +53,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-07-07 19:43:26</sys_created_on>
-        <sys_id>d8497a5fdb8b33008f1daf2648961970</sys_id>
+        <sys_id>1da17a95db5333008f1daf2648961950</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Type</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
         <sys_update_name>sys_dictionary_x_173342_cicsv_t1_segment_u_type</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-08-09 09:45:35</sys_updated_on>
+        <sys_updated_on>2019-08-15 14:20:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
