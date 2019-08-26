@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_173342_cicsv_t1.projectApprovable</api_name>
+        <client_callable>false</client_callable>
+        <description>Tests if all the conditions have been met to be able to approve a Project. There must be no comments in Pending Decision state, the user must be a Project Manager for this Project and the Project must be in Pending Review state.</description>
+        <name>projectApprovable</name>
+        <script><![CDATA[var projectApprovable = Class.create();
+projectApprovable.prototype = {
+    initialize: function() {
+    },
+	
+	allowApproval: function(current) {
+		gs.info("Testing allowApproval");
+		// If this user isn't a Project Manager for this Project or the project is in the 
+		// wrong state then return false.
+		if (current.u_project_manager.toString().indexOf(gs.getUserID()) < 0 || 
+			current.u_state != '20') {
+			return false;
+		}
+		
+		// Test to see of this Project has any Comments in Pending Decision state
+		var commentCount = new GlideAggregate('x_173342_cicsv_t1_comment');
+		commentCount.addQuery('u_parent_statement', current.sys_id);
+		commentCount.addQuery('u_comment_state', '0'); // Pending Decision state
+		commentCount.addAggregate('COUNT');
+		
+		commentCount.query();
+		var comments = 0;
+		if (commentCount.next())
+			comments = commentCount.getAggregate('COUNT');
+
+		if (comments == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	},
+
+    type: 'projectApprovable'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-26 15:47:22</sys_created_on>
+        <sys_id>a598a378db2333008f1daf2648961979</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>projectApprovable</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_include_a598a378db2333008f1daf2648961979</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-26 16:05:18</sys_updated_on>
+    </sys_script_include>
+</record_update>
