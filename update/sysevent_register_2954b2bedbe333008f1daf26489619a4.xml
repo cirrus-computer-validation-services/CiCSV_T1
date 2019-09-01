@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>Fires when a Project is approved and the Risk Assessment is created</description>
+        <event_name>x_173342_cicsv_t1.riskAssessmentCreated</event_name>
+        <fired_by>Workflow</fired_by>
+        <queue/>
+        <suffix>riskAssessmentCreated</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-01 16:40:13</sys_created_on>
+        <sys_id>2954b2bedbe333008f1daf26489619a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_173342_cicsv_t1.riskAssessmentCreated</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sysevent_register_2954b2bedbe333008f1daf26489619a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-01 16:40:23</sys_updated_on>
+        <table>x_173342_cicsv_t1_risk_assessment</table>
+    </sysevent_register>
+</record_update>
