@@ -10,14 +10,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-01 12:13:40</sys_created_on>
         <sys_id>16ad0ebcdb8373008f1daf264896197f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>calcriskassessment</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
         <sys_update_name>sys_ui_macro_16ad0ebcdb8373008f1daf264896197f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-02 13:52:53</sys_updated_on>
+        <sys_updated_on>2019-09-02 11:40:19</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	<script>
@@ -52,6 +52,10 @@
 					g_form.setValue('u_risk_assessment', '2');
 				}
 			}
+		
+			// Set the colour of the field label depending on the risk
+			changeFieldLabel('u_risk_assessment', '', g_form.getValue('u_risk_assessment'), '');
+		
 			return;
 		}
 		
@@ -96,6 +100,9 @@
 					}
 					break;
 			}
+		
+			// Set the colour of the field label depending on the risk
+			changeFieldLabel('u_risk_category', '', g_form.getValue('u_risk_category'), '');
 			return;		
 		}
 		
@@ -127,6 +134,9 @@
 				g_form.setValue('u_gxp_criticality', '1'); // None
 			}
 
+			// Set the colour of the field label depending on the risk
+			changeFieldLabel('u_gxp_criticality', '', g_form.getValue('u_gxp_criticality'), '');
+		
 			return;
 		}
 		
@@ -183,8 +193,9 @@
 		// If the software isn't from a third party then the supplier risk is None
 		// alert('Third party supplier value = ' + tps);
 		if (tps == 'false') {
-			// alert('Setting supplier risk to high');
 			g_form.setValue('u_supplier_risk', '1');
+			// Set the colour of the field label depending on the risk
+			changeFieldLabel('u_supplier_risk', '', g_form.getValue('u_supplier_risk'), '');
 			return;
 		}
 
@@ -195,6 +206,8 @@
 				if (ad == 'false') {
 					if (st == 'false') {
 						g_form.setValue('u_supplier_risk', '4');
+						// Set the colour of the field label depending on the risk
+						changeFieldLabel('u_supplier_risk', '', g_form.getValue('u_supplier_risk'), '');
 						return;
 					}
 				}
@@ -207,6 +220,8 @@
 				if (ad == 'true') {
 					if (st == 'true') {
 						g_form.setValue('u_supplier_risk', '2');
+						// Set the colour of the field label depending on the risk
+						changeFieldLabel('u_supplier_risk', '', g_form.getValue('u_supplier_risk'), '');
 						return;
 					}
 				}
@@ -214,10 +229,41 @@
 		}
 
 		// For all other cases the risk is medium
-		// alert('Setting supplier risk to medium');
 		g_form.setValue('u_supplier_risk', '3');
+		// Set the colour of the field label depending on the risk
+		changeFieldLabel('u_supplier_risk', '', g_form.getValue('u_supplier_risk'), '');
 		return;
 	}
+		
+	function changeFieldLabel(field, label, risk, weight){
+		try{
+			var labelElement = $('label.' + g_form.getControl(field).id);
+			labelElement.select('.label-text').each(function(elmt) {
+			
+			// If we passed in a new label then set it
+			if (label != '')
+					elmt.innerHTML = label + ':';
+			// Set the colour according to the risk
+			switch (risk) {
+			case '4':
+			elmt.style.color = 'red';
+			break;
+			case '3':
+			elmt.style.color = 'orange';
+			break;
+			case '2':
+			elmt.style.color = 'green';
+			break;
+			case '1':
+			elmt.style.color = 'black';
+			break;
+			}
+		
+			if(weight)
+					elmt.style.fontWeight = weight;
+			});
+		}catch(e){};
+	}	
 	</script>	
 </j:jelly>]]></xml>
     </sys_ui_macro>
