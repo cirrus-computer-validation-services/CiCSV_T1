@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Colours the risk assessment labels   when the form is loaded</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Configure Risk Assessment Form onLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	// Disable the tabbed view
+	g_tabs2Sections.deactivate();
+	
+	// Colour the calculated risk assessments
+	changeFieldLabel('u_supplier_risk', '', g_form.getValue('u_supplier_risk'), '');
+	changeFieldLabel('u_gxp_criticality', '', g_form.getValue('u_gxp_criticality'), '');
+	changeFieldLabel('u_risk_category', '', g_form.getValue('u_risk_category'), '');
+	changeFieldLabel('u_risk_assessment', '', g_form.getValue('u_risk_assessment'), '');
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-02 11:45:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e35afac3dbaf33008f1daf26489619aa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Configure Risk Assessment Form onLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_client_e35afac3dbaf33008f1daf26489619aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-02 12:04:34</sys_updated_on>
+        <table>x_173342_cicsv_t1_risk_assessment</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
