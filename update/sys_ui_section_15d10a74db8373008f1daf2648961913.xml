@@ -4,13 +4,13 @@
             <element>u_project_identifier</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-09-02 11:52:21</sys_created_on>
-            <sys_id>db7cb647dbaf33008f1daf26489619b9</sys_id>
+            <sys_created_on>2019-09-04 07:56:56</sys_created_on>
+            <sys_id>16c95c37db2333008f1daf26489619a6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_risk_assessment" sys_domain="global" view="Default view">15d10a74db8373008f1daf2648961913</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-09-02 11:52:21</sys_updated_on>
+            <sys_updated_on>2019-09-04 07:56:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,15 +18,29 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-09-02 11:52:21</sys_created_on>
-            <sys_id>937cb647dbaf33008f1daf26489619ba</sys_id>
+            <sys_created_on>2019-09-04 07:56:56</sys_created_on>
+            <sys_id>dac95c37db2333008f1daf26489619a6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_risk_assessment" sys_domain="global" view="Default view">15d10a74db8373008f1daf2648961913</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-09-02 11:52:21</sys_updated_on>
+            <sys_updated_on>2019-09-04 07:56:56</sys_updated_on>
             <sys_user/>
             <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_state</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-04 07:56:56</sys_created_on>
+            <sys_id>5ec95c37db2333008f1daf26489619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_173342_cicsv_t1_risk_assessment" sys_domain="global" view="Default view">15d10a74db8373008f1daf2648961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-04 07:56:56</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
