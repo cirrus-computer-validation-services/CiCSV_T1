@@ -12,13 +12,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-04 12:04:04</sys_created_on>
-        <sys_id>09ac57fadb6733008f1daf264896194b</sys_id>
+        <sys_id>5c399cb3db2333008f1daf2648961953</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_173342_cicsv_t1_requirement</sys_name>
         <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
-        <sys_update_name>ua_table_licensing_config_09ac57fadb6733008f1daf264896194b</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_5c399cb3db2333008f1daf2648961953</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-06-04 12:04:04</sys_updated_on>
     </ua_table_licensing_config>
