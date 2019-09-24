@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_173342_cicsv_t1_segment" label="Validation Plan" max_length="40" name="x_173342_cicsv_t1_validation_plan" type="collection">
+        <element label="Application IQ" max_length="40" name="application_iq" type="boolean"/>
+        <element label="Functional requirements" max_length="40" name="functional_requirements" type="boolean"/>
+        <element choice="1" label="Functional risk assessment" max_length="40" name="functional_risk_assessment" type="choice">
+            <choice/>
+        </element>
+        <element label="Infrastructure IQ" max_length="40" name="infrastructure_iq" type="boolean"/>
+        <element label="Release memo" max_length="40" name="release_memo" type="boolean"/>
+        <element label="System design document" max_length="40" name="system_design_document" type="boolean"/>
+        <element label="System test script" max_length="40" name="system_test_script" type="boolean"/>
+        <element label="Test plan" max_length="40" name="test_plan" type="boolean"/>
+        <element label="Trace matrix" max_length="40" name="trace_matrix" type="boolean"/>
+        <element choice="1" label="Unit test script" max_length="40" name="unit_test_script" type="choice">
+            <choice/>
+        </element>
+        <element label="User acceptance test script" max_length="40" name="user_acceptance_test_script" type="boolean"/>
+        <element label="User requirements" max_length="40" name="user_requirements" type="boolean"/>
+        <element label="21 CFR Part 11" max_length="40" name="u_21_cfr_part_11" type="boolean"/>
+        <element label="Validation summary report" max_length="40" name="validation_summary_report" type="boolean"/>
+    </element>
+</database>
