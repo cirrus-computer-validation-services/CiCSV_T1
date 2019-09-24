@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_173342_cicsv_t1.raApprovable</api_name>
+        <client_callable>false</client_callable>
+        <description>Tests if all the conditions have been met to be able to approve a Risk assessment. There must be no comments in Pending Decision state, the user must be a Project Manager or IMQA for this Project and the Project must be in Pending Review state.</description>
+        <name>raApprovable</name>
+        <script><![CDATA[var raApprovable = Class.create();
+raApprovable.prototype = {
+    initialize: function() {
+    },
+	
+	allowApproval: function(current) {
+		gs.info("Testing raApprovable.allowApproval");
+		// If this user isn't a Project Manager or IMQA for this Project or the project is in the 
+		// wrong state then return false.
+		if ((current.u_project_identifier.u_project_manager.toString().indexOf(gs.getUserID()) < 0 &&
+			 current.u_project_identifier.u_project_imqas.toString().indexOf(gs.getUserID()) < 0) || 
+			current.u_state != '20') {
+			return false;
+		}
+		
+		// Test to see of this Project has any Comments in Pending Decision state
+		var commentCount = new GlideAggregate('x_173342_cicsv_t1_comment');
+		commentCount.addQuery('u_parent_statement', current.sys_id);
+		commentCount.addQuery('u_comment_state', '0'); // Pending Decision state
+		commentCount.addAggregate('COUNT');
+		
+		commentCount.query();
+		var comments = 0;
+		if (commentCount.next())
+			comments = commentCount.getAggregate('COUNT');
+
+		if (comments == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	},
+
+    type: 'raApprovable'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-08 15:36:30</sys_created_on>
+        <sys_id>4159ea41dbb333008f1daf2648961991</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>raApprovable</sys_name>
+        <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+        <sys_update_name>sys_script_include_4159ea41dbb333008f1daf2648961991</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-16 20:19:50</sys_updated_on>
+    </sys_script_include>
+</record_update>
