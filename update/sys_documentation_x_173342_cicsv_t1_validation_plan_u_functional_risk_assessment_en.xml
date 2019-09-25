@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_functional_risk_assessment" label="Functional risk assessment" language="en" table="x_173342_cicsv_t1_validation_plan">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_functional_risk_assessment</element>
+            <help/>
+            <hint/>
+            <label>Functional risk assessment</label>
+            <language>en</language>
+            <name>x_173342_cicsv_t1_validation_plan</name>
+            <plural>Functional risk assessments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-25 18:16:09</sys_created_on>
+            <sys_id>75e07662db4000108f1daf264896196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Functional risk assessment</sys_name>
+            <sys_package display_value="CiCSV_T1" source="x_173342_cicsv_t1">87477b21db2133008f1daf2648961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CiCSV_T1">87477b21db2133008f1daf2648961959</sys_scope>
+            <sys_update_name>sys_documentation_x_173342_cicsv_t1_validation_plan_u_functional_risk_assessment_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-25 18:16:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
