@@ -36,7 +36,7 @@
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element label="Project identifier" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
+        <element display="true" label="Project identifier" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
         <element choice="1" label="Release memo" max_length="40" name="u_release_memo" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
