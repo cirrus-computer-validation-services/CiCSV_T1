@@ -33,12 +33,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-10-06 14:22:57</sys_created_on>
         <sys_id>7805a20edb5000108f1daf264896199f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-06 14:34:21</sys_updated_on>
+        <sys_updated_on>2019-10-06 14:36:25</sys_updated_on>
         <table>x_173342_cicsv_t1_risk_assessment</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="CiCSV Risk Assessment Approval">d9a56acddb7333008f1daf2648961994</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

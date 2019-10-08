@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_173342_cicsv_t1_segment" label="Validation Plan" max_length="40" name="x_173342_cicsv_t1_validation_plan" sizeclass="3" type="collection">
-        <element choice="1" label="21 CFR Part 11" max_length="40" name="u_21_cfr_part_11" type="choice">
+    <element extends="x_173342_cicsv_t1_segment" label="Validation Plan" max_length="40" name="x_173342_cicsv_t1_validation_plan" sizeclass="2" type="collection">
+        <element choice="1" label="21 CFR Part 11 assessment" max_length="40" name="u_21_cfr_part_11" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
@@ -36,12 +36,14 @@
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
+        <element label="Project identifier" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
         <element choice="1" label="Release memo" max_length="40" name="u_release_memo" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
+        <element label="Risk assessment" max_length="32" name="u_risk_assessment" reference="x_173342_cicsv_t1_risk_assessment" type="reference"/>
         <element choice="1" label="System design document" max_length="40" name="u_system_design_document" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
@@ -67,7 +69,10 @@
             </choice>
         </element>
         <element choice="1" label="Unit test script" max_length="40" name="u_unit_test_script" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="No" value="20"/>
+                <element inactive_on_update="false" label="Yes" value="10"/>
+            </choice>
         </element>
         <element choice="1" label="User acceptance test script" max_length="40" name="u_user_acceptance_test_script" type="choice">
             <choice>
