@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_173342_cicsv_t1_segment" label="Validation Plan" max_length="40" name="x_173342_cicsv_t1_validation_plan" sizeclass="2" type="collection">
-        <element choice="1" label="21 CFR Part 11 assessment" max_length="40" name="u_21_cfr_part_11" type="choice">
+    <element extends="x_173342_cicsv_t1_segment" label="Validation Plan" max_length="40" name="x_173342_cicsv_t1_validation_plan" sizeclass="1" type="collection">
+        <element choice="1" label="21 CFR Part 11 assessment" max_length="40" name="u_21_cfr_part_11" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Application IQ" max_length="40" name="u_application_iq" type="choice">
+        <element choice="1" label="Application IQ" max_length="40" name="u_application_iq" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="CSV risk assessment" max_length="40" name="u_csv_risk_assessment" type="choice">
+        <element choice="1" label="CSV risk assessment" max_length="40" name="u_csv_risk_assessment" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Functional requirements" max_length="40" name="u_functional_requirements" type="choice">
+        <element choice="1" label="Functional requirements" max_length="40" name="u_functional_requirements" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Functional risk assessment" max_length="40" name="u_functional_risk_assessment" type="choice">
+        <element choice="1" label="Functional risk assessment" max_length="40" name="u_functional_risk_assessment" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Infrastructure IQ" max_length="40" name="u_infrastructure_iq" type="choice">
+        <element choice="1" label="Infrastructure IQ" max_length="40" name="u_infrastructure_iq" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element display="true" label="Project identifier" max_length="32" name="u_project_identifier" reference="x_173342_cicsv_t1_project" type="reference"/>
-        <element choice="1" label="Release memo" max_length="40" name="u_release_memo" type="choice">
+        <element display="true" label="Project identifier" max_length="32" name="u_project_identifier" read_only="true" reference="x_173342_cicsv_t1_project" type="reference"/>
+        <element choice="1" label="Release memo" max_length="40" name="u_release_memo" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
         <element label="Risk assessment" max_length="32" name="u_risk_assessment" reference="x_173342_cicsv_t1_risk_assessment" type="reference"/>
-        <element choice="1" label="System design document" max_length="40" name="u_system_design_document" type="choice">
+        <element choice="1" label="System design document" max_length="40" name="u_system_design_document" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="System test script" max_length="40" name="u_system_test_script" type="choice">
+        <element choice="1" label="System test script" max_length="40" name="u_system_test_script" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Test plan" max_length="40" name="u_test_plan" type="choice">
+        <element choice="1" label="Test plan" max_length="40" name="u_test_plan" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Trace matrix" max_length="40" name="u_trace_matrix" type="choice">
+        <element choice="1" label="Trace matrix" max_length="40" name="u_trace_matrix" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Unit test script" max_length="40" name="u_unit_test_script" type="choice">
+        <element choice="1" default="20" label="Unit test script" max_length="40" name="u_unit_test_script" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="User acceptance test script" max_length="40" name="u_user_acceptance_test_script" type="choice">
+        <element choice="1" label="User acceptance test script" max_length="40" name="u_user_acceptance_test_script" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="User requirements" max_length="40" name="u_user_requirements" type="choice">
+        <element choice="1" label="User requirements" max_length="40" name="u_user_requirements" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Validation plan" max_length="40" name="u_validation_plan" type="choice">
+        <element choice="1" label="Validation plan" max_length="40" name="u_validation_plan" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Validation summary report" max_length="40" name="u_validation_summary_report" type="choice">
+        <element choice="1" label="Validation summary report" max_length="40" name="u_validation_summary_report" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="20"/>
                 <element inactive_on_update="false" label="Yes" value="10"/>
